@@ -1,26 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
+import BorrowerGettingStarted from './containers/borrower/GettingStarted';
+import Loans from './containers/borrower/Loans';
+import Messages from './containers/borrower/Messages';
+import Pool from './containers/borrower/Pool';
+import MainLayout from './components/MainLayout';
+import DashboardLayout from './components/DashboardLayout';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <BrowserRouter>
+        <MainLayout>
+          <DashboardLayout>
+            <Switch>
+              <Redirect from="/borrower/gettingStarted" to="/" />
+              <Route exact path="/" component={BorrowerGettingStarted} />
+              <Route path="/borrower/loans" component={Loans} />
+              <Route path="/borrower/messages" component={Messages} />
+              <Route path="/borrower/pool" component={Pool} />
+            </Switch>
+          </DashboardLayout>
+        </MainLayout>
+      </BrowserRouter>
     );
   }
 }

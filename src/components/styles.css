@@ -1,0 +1,355 @@
+/* Borrower dashboard Header */
+.page-header-index-pageHeader {
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 16px 32px;
+}
+.page-header-index-content-left {
+  display: flex;
+}
+.page-header-index-content-left-detail h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 700;
+  color: #2e4369;
+  margin: 0;
+}
+.page-header-index-content-left-detail p {
+  margin-bottom: 0;
+  margin-top: 12px;
+  color: rgb(93, 112, 121);
+  font-size: 14px;
+}
+
+/* Create account form content */
+.sectionTitle {
+  margin-bottom: 3rem;
+  font-size: 32px;
+  text-align: center;
+  color: rgb(77, 77, 77);
+  font-weight: 200;
+}
+.formGroup {
+  margin-bottom: 0.8rem;
+}
+.input {
+  width: 100% !important;
+  height: 50px !important;
+  font-size: 15px !important;
+  width: 100% !important;
+  background: #faf9f8 !important;
+  border-radius: 2px !important;
+}
+.input:focus {
+  border-color: #40a9ff !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-right-width: 1px !important;
+}
+.input::placeholder {
+  font-size: 15px;
+}
+.purposeSelect {
+  width: 100%;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+.onboard-form .ant-select-selection--single {
+  height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  background: #faf9f8 !important;
+  border-radius: 2px !important;
+}
+.onboard-form .ant-select-selection:focus {
+  border-color: #40a9ff !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-right-width: 1px !important;
+}
+
+/* DashboardHeaderWithMetric */
+.page-header-index-pageHeader {
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 16px 32px;
+}
+.page-header-index-content-right {
+  display: flex;
+}
+.page-header-index-content-right-detail h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.page-header-index-content-right-detail p {
+  margin-bottom: 0;
+}
+.page-header-index-content-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-header-index-content-left-col-title {
+  display: flex;
+}
+.page-header-index-content-left-col-title p {
+  text-align: center;
+  margin-right: 12px;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+.page-header-index-content-left-col-title span {
+  display: flex;
+  align-items: center;
+}
+.page-header-index-content-left-col-1,
+.page-header-index-content-left-col-2,
+.page-header-index-content-left-col-3 {
+  text-align: center;
+}
+.page-header-index-content-left-col-1 h3 {
+  margin-left: -16px;
+  margin-bottom: 0;
+}
+
+/* DashboardLayout */
+.logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+  border-radius: 5px;
+}
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding-right: 12px;
+  align-items: center;
+}
+.dashboard-header-index-right {
+  display: flex;
+  align-items: center;
+}
+.dashboard-header-index-right .dashboard-header-index-action {
+  padding: 0 12px;
+  transition: all 0.3s;
+}
+.dashboard-header-index-right .dashboard-header-index-action .text {
+  color: hsla(0, 0%, 100%, 0.65);
+}
+.ant-menu-horizontal {
+  line-height: 64px !important;
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected {
+  background-color: transparent !important;
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected a {
+  color: #fff !important;
+}
+
+/* IncomeInformationFormContent */
+.sectionTitle {
+  margin-bottom: 3rem;
+  font-size: 32px;
+  text-align: center;
+  color: rgb(77, 77, 77);
+  font-weight: 200;
+}
+.formGroup {
+  margin-bottom: 0.8rem;
+}
+.input {
+  width: 100% !important;
+  height: 50px !important;
+  font-size: 15px !important;
+  width: 100% !important;
+  background: #faf9f8 !important;
+  border-radius: 2px !important;
+}
+.input:focus {
+  border-color: #40a9ff !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-right-width: 1px !important;
+}
+.input::placeholder {
+  font-size: 15px;
+}
+.purposeSelect {
+  width: 100%;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+.onboard-form .ant-select-selection--single {
+  height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  background: #faf9f8 !important;
+  border-radius: 2px !important;
+}
+.onboard-form .ant-select-selection:focus {
+  border-color: #40a9ff !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-right-width: 1px !important;
+}
+
+/* LoanInformationFormContent */
+.sectionTitle {
+  margin-bottom: 3rem;
+  font-size: 32px;
+  text-align: center;
+  color: rgb(77, 77, 77);
+  font-weight: 200;
+}
+.formGroup {
+  margin-bottom: 0.8rem;
+}
+.input {
+  width: 100% !important;
+  height: 50px !important;
+  font-size: 15px !important;
+  width: 100% !important;
+  background: #faf9f8 !important;
+  border-radius: 2px !important;
+}
+.input:focus {
+  border-color: #40a9ff !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-right-width: 1px !important;
+}
+.input::placeholder {
+  font-size: 15px;
+}
+.purposeSelect {
+  width: 100%;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+.onboard-form .ant-select-selection--single {
+  height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  background: #faf9f8 !important;
+  border-radius: 2px !important;
+}
+.onboard-form .ant-select-selection:focus {
+  border-color: #40a9ff !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-right-width: 1px !important;
+}
+
+/* LoanRequestDrawer */
+.ant-drawer .ant-drawer-content {
+  overflow: auto;
+}
+.drawer .ant-drawer-header {
+  padding: 32px;
+}
+.drawer .close-icon {
+  text-align: right;
+}
+.drawer .ant-steps-item-finish > .ant-steps-item-tail::after {
+  background: #2e4369;
+}
+.drawer
+  .ant-steps-item-finish
+  .ant-steps-item-icon
+  > .ant-steps-icon
+  .ant-steps-icon-dot {
+  background: #2e4369;
+}
+.drawer
+  .ant-steps-item-process
+  .ant-steps-item-icon
+  > .ant-steps-icon
+  .ant-steps-icon-dot {
+  background: #00b9ff;
+}
+.drawer .ant-steps-item-content .ant-steps-item-title {
+  font-size: 13px;
+  font-family: 'Poppins';
+}
+.drawer .body-title {
+  padding-bottom: 16px;
+  text-align: center;
+}
+.drawer .body-title h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: rgb(46, 67, 105);
+  line-height: 32px;
+}
+.drawer .ant-drawer-body {
+  padding-top: 50px;
+}
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+.button-group .ant-btn {
+  width: 45%;
+  height: 48px;
+  font-weight: 600;
+}
+.button-group .btn-confirm {
+  width: 100%;
+}
+.button-group .ant-btn-primary {
+  background-color: #2ed06e;
+  border-color: #2ed06e;
+}
+.steps-footer {
+  margin-top: 32px;
+}
+
+/* PersonalInformation */
+.sectionTitle {
+  margin-bottom: 3rem;
+  font-size: 32px;
+  text-align: center;
+  color: rgb(77, 77, 77);
+  font-weight: 200;
+}
+.formGroup {
+  margin-bottom: 0.8rem;
+}
+.input {
+  width: 100% !important;
+  height: 50px !important;
+  font-size: 15px !important;
+  width: 100% !important;
+  background: #faf9f8 !important;
+  border-radius: 2px !important;
+}
+.input:focus {
+  border-color: #40a9ff !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-right-width: 1px !important;
+}
+.input::placeholder {
+  font-size: 15px;
+}
+.purposeSelect {
+  width: 100%;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+.onboard-form .ant-select-selection--single {
+  height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  background: #faf9f8 !important;
+  border-radius: 2px !important;
+}
+.onboard-form .ant-select-selection:focus {
+  border-color: #40a9ff !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-right-width: 1px !important;
+}

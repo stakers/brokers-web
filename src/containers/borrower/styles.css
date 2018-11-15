@@ -1,0 +1,432 @@
+/* Getting started */
+.account-setup-progress {
+  display: flex;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+}
+.account-setup-progress-indicator {
+  border-right: 1px solid #e8e8e8;
+  padding: 16px;
+  text-align: center;
+}
+.account-setup-progress-items {
+  width: 100%;
+  padding: 16px;
+}
+.account-setup-progress-items table {
+  width: 100%;
+}
+.account-setup-progress-items table td div {
+  display: inline-flex;
+  align-items: center;
+}
+.account-setup-progress-items table td span {
+  font-weight: 400;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.account-setup-progress-items table td span:hover {
+  background: #e8e8e8;
+}
+.account-setup-progress-items table td {
+}
+
+/* Loan Request Drawer */
+
+.ant-drawer .ant-drawer-content {
+  overflow: auto;
+}
+.drawer .ant-drawer-header {
+  padding: 32px;
+}
+.drawer .close-icon {
+  text-align: right;
+}
+.drawer .ant-steps-item-finish > .ant-steps-item-tail::after {
+  background: #2e4369;
+}
+.drawer
+  .ant-steps-item-finish
+  .ant-steps-item-icon
+  > .ant-steps-icon
+  .ant-steps-icon-dot {
+  background: #2e4369;
+}
+.drawer
+  .ant-steps-item-process
+  .ant-steps-item-icon
+  > .ant-steps-icon
+  .ant-steps-icon-dot {
+  background: #00b9ff;
+}
+.drawer .ant-steps-item-content .ant-steps-item-title {
+  font-size: 13px;
+  font-family: 'Poppins';
+}
+.drawer .body-title {
+  padding-bottom: 16px;
+  text-align: center;
+}
+.drawer .body-title h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: rgb(46, 67, 105);
+  line-height: 32px;
+}
+.drawer .ant-drawer-body {
+  padding-top: 50px;
+}
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+.button-group .ant-btn {
+  width: 45%;
+  height: 48px;
+  font-weight: 600;
+}
+.button-group .btn-confirm {
+  width: 100%;
+}
+.button-group .ant-btn-primary {
+  background-color: #2ed06e;
+  border-color: #2ed06e;
+}
+.steps-footer {
+  margin-top: 32px;
+}
+
+/* Loans */
+.data-panel {
+  padding: 10px 16px;
+  margin: 16px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.data-panel .ant-table-pagination.ant-pagination {
+  margin-bottom: 0;
+}
+.data-panel .ant-table-content {
+  font-family: 'Poppins';
+}
+.data-panel .ant-table-content thead tr th {
+  background: #fff;
+  color: #2e4369;
+}
+.data-panel .ant-table-content .ant-table-thead > tr.ant-table-row-hover > td,
+.ant-table-tbody > tr.ant-table-row-hover > td,
+.ant-table-thead > tr:hover > td,
+.ant-table-tbody > tr:hover > td {
+  background: transparent;
+}
+.data-panel .ant-pagination .ant-pagination-item-active {
+  border-color: #2e4369;
+}
+.data-panel .ant-pagination .ant-pagination-item-active a {
+  color: #2e4369;
+}
+.intro-container {
+  text-align: center;
+  margin-top: 42px;
+}
+.intro-container-title {
+  font-size: 24px;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+.intro-container-desc {
+  font-size: 13px;
+}
+.page-header-index-content-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.page-header-index-content-right .action-button {
+  margin-right: 16px;
+}
+.action-button {
+  height: 40px;
+  background-color: rgb(0, 172, 104);
+  border-color: rgb(0, 172, 104);
+}
+.action-button:hover,
+.action-button:active,
+.action-button:focus {
+  background-color: rgb(0, 172, 100);
+  border-color: rgb(0, 172, 104);
+}
+.dropdown-button {
+  height: 40px;
+  border-color: rgb(0, 172, 104);
+  color: rgb(0, 172, 104);
+}
+.dropdown-button:hover,
+.dropdown-button:focus,
+.dropdown-button:active {
+  border-color: rgb(0, 172, 104);
+  color: rgb(0, 172, 104);
+  box-shadow: transparent;
+}
+
+/* Messages */
+.intro-container {
+  text-align: center;
+  margin-top: 42px;
+}
+.intro-container-title {
+  font-size: 24px;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+.intro-container-desc {
+  font-size: 13px;
+}
+
+/* Onboard */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header h3 {
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+}
+.header .account {
+  display: flex;
+  align-items: center;
+}
+.header .account span {
+  color: #fff;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 8px;
+}
+.onboardWrapper {
+  margin-top: 4em;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(102, 102, 102, 0.5);
+  height: auto;
+  padding-bottom: 4rem;
+  padding-top: 2rem;
+  display: flex;
+}
+.largeButton {
+  width: 100% !important;
+  height: 50px !important;
+  text-transform: uppercase !important;
+  font-weight: normal !important;
+  font-size: 14px !important;
+  background: #068acd !important;
+}
+.anticon-left-circle {
+  font-size: 36px;
+  color: #bcbcbc;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+/* Transaction page */
+.wrapper {
+  background: #fff;
+  padding: 48px 0;
+}
+.body-title {
+  padding-bottom: 16px;
+  text-align: center;
+}
+.body-title h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: rgb(46, 67, 105);
+  line-height: 32px;
+}
+.container {
+  border: 1px solid #e2e6e8;
+  border-radius: 3px;
+  padding: 16px;
+}
+.container .section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .section.section-header {
+  margin-bottom: 24px;
+}
+.container .section.section-header .header-title {
+  color: rgb(168, 170, 172);
+  font-size: 14px;
+  font-weight: 500;
+}
+.container .section.section-header .header-action {
+  color: #00b9ff;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.container .section-item {
+  margin-bottom: 16px;
+}
+.container .section-item .title {
+  color: rgb(46, 67, 105);
+}
+.container .section-item .detail {
+  font-weight: 600;
+  font-size: 18px;
+  color: #2e4369;
+}
+.container .section-item .detail.light-text {
+  font-weight: 500;
+  font-size: 14px;
+  color: #2e4369;
+}
+
+.form-group {
+  padding-bottom: 16px;
+}
+.form-group .ant-input {
+  height: 50px;
+  font-family: 'Poppins';
+}
+.form-group .ant-input-group-addon {
+  background: #2e4369;
+}
+.form-group .ant-input-group-addon .ant-select-arrow {
+  color: rgb(0, 185, 255);
+}
+.form-group .ant-input:hover {
+  border-color: #00b9ff;
+}
+.form-group .ant-input:focus {
+  box-shadow: none;
+}
+.form-group .purpose-select {
+  font-family: 'Poppins', sans-serif;
+}
+.form-group .purpose-select .ant-select-selection--single {
+  height: 50px;
+}
+.form-group .purpose-select .ant-select-selection__rendered {
+  line-height: 54px;
+}
+.form-group .purpose-select .ant-select-focused .ant-select-selection,
+.ant-select-selection:focus,
+.ant-select-selection:active {
+  box-shadow: none;
+}
+.dropdown {
+  font-family: 'Poppins', sans-serif;
+}
+.dropdown .ant-select-dropdown-menu-item {
+  line-height: 42px;
+}
+.dropdown .ant-select-dropdown-menu-item:hover {
+  background-color: #f2f5f7;
+  color: rgba(0, 0, 0, 0.65);
+}
+.dropdown .ant-select-dropdown-menu-item-selected {
+  background-color: #2e4369;
+  color: #fff;
+  font-weight: 500;
+}
+.dropdown .ant-select-dropdown-menu-item-active {
+  background-color: #f2f5f7;
+}
+.currency-select {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+.ant-group-addon {
+  background-color: rgb(44, 65, 101);
+  color: #fff;
+  font-weight: 600;
+}
+.currency-dropdown {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.currency-dropdown .ant-select-dropdown-menu-item {
+  line-height: 42px;
+  font-size: 16px;
+}
+.currency-dropdown .ant-select-dropdown-menu-item:hover {
+  background-color: #f2f5f7;
+}
+.currency-dropdown .ant-select-dropdown-menu-item-active {
+  background-color: #f2f5f7;
+}
+.currency-select .ant-select-selection-selected-value {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 19px;
+  color: #fff;
+}
+.currency-dropdown .ant-select-dropdown-menu-item .currency-name {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #a8aaac;
+  margin-left: 8px;
+}
+.currency-select .ant-select-selection-selected-value .currency-name {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #a8aaac;
+  margin-left: 8px;
+  font-weight: 400;
+}
+.dropdown .ant-select-dropdown-menu-item-selected:hover {
+  background-color: #2e4369;
+  color: #fff;
+}
+.stepsContainer {
+  display: flex;
+  justify-content: center;
+}
+.step {
+  font-size: 12px;
+}
+
+/* Pool */
+.data-panel {
+  padding: 10px 16px;
+  margin: 16px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.data-panel .ant-table-pagination.ant-pagination {
+  margin-bottom: 0;
+}
+.data-panel .ant-table-content {
+  font-family: 'Poppins';
+}
+.data-panel .ant-table-content thead tr th {
+  background: #fff;
+  color: #2e4369;
+}
+.data-panel .ant-table-content .ant-table-thead > tr.ant-table-row-hover > td,
+.ant-table-tbody > tr.ant-table-row-hover > td,
+.ant-table-thead > tr:hover > td,
+.ant-table-tbody > tr:hover > td {
+  background: transparent;
+}
+.data-panel .ant-pagination .ant-pagination-item-active {
+  border-color: #2e4369;
+}
+.data-panel .ant-pagination .ant-pagination-item-active a {
+  color: #2e4369;
+}
+.intro-container {
+  text-align: center;
+  margin-top: 42px;
+}
