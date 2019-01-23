@@ -1,0 +1,55 @@
+.tax-report-information-page {
+  h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    color: rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+  }
+
+  .table {
+    margin-bottom: 0;
+
+    tbody tr td {
+      border-top: 0;
+      padding: 0;
+
+      &:first-of-type {
+        width: 30%;
+
+        .description {
+          font-size: 16px;
+          color: rgba(0, 0, 0, 0.7);
+          line-height: 21px;
+          margin-bottom: 10px;
+          display: block;
+        }
+        .contract-link {
+          font-size: 16px;
+        }
+      }
+
+      .country-select {
+        .select-label {
+          font-size: 16px;
+        }
+        .dropdown {
+          width: 30%;
+
+          &:focus {
+            border-color: #ced4da;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+
+    tbody tr {
+      border-bottom: none;
+
+      &:last-of-type {
+        border-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.personal-information-page {
+  h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    color: rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+  }
+
+  .table {
+    margin-bottom: 0;
+
+    tbody tr td {
+      border-top: 0;
+      font-size: 14px;
+
+      &:first-of-type {
+        color: rgba(0, 0, 0, 0.7);
+        width: 190px;
+      }
+
+      &.data {
+        font-size: 16px;
+      }
+
+      &.setting-action {
+        text-align: right;
+        font-size: 16px;
+      }
+    }
+
+    tbody tr {
+      border-bottom: 1px solid #dee2e6;
+
+      &:last-of-type {
+        border-bottom: 0;
+      }
+    }
+  }
+}

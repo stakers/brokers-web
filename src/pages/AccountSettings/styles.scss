@@ -1,0 +1,37 @@
+.content {
+  padding: 0 64px 64px;
+  background-color: #f4f4f4;
+  min-height: 560px;
+
+  h1 {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+
+.content-body {
+  margin-top: 32px;
+}
+
+.tab-navigation-container {
+  .nav-items {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      .nav-item {
+        margin-bottom: 20px;
+        text-align: left;
+        width: 100%;
+
+        a {
+          color: rgba(0, 0, 0, 0.7);
+          font-size: 16px;
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
