@@ -1,4 +1,4 @@
-.currencies-information-page {
+.notifications-information-page {
   h2 {
     font-size: 14px;
     margin-bottom: 10px;
@@ -12,7 +12,7 @@
 
     tbody tr td {
       border-top: 0;
-      padding: 0;
+      padding-bottom: 10px;
 
       &:first-of-type {
         width: 30%;
@@ -25,6 +25,14 @@
           display: block;
         }
         .choice {
+          display: flex;
+          align-items: center;
+          // margin-bottom: 20px;
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+
           .styled-checkbox {
             position: absolute;
             opacity: 0;

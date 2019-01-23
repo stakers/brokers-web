@@ -17,6 +17,10 @@ const Security = () => {
               <tr>
                 <td>
                   <span styleName="title">Two-factor authentication</span>
+                  <span styleName="description">
+                    To protect your account, a security code is required in
+                    addition to your password
+                  </span>
                 </td>
                 <td styleName="data" colSpan="2">
                   OFF
@@ -28,6 +32,9 @@ const Security = () => {
               <tr>
                 <td>
                   <span styleName="title">Change password</span>
+                  <span styleName="description">
+                    Choose a unique password for your account.
+                  </span>
                 </td>
                 <td styleName="data" colSpan="2">
                   *******

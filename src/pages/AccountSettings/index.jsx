@@ -3,16 +3,16 @@
 import React from 'react';
 import CssModules from 'react-css-modules';
 import { Row, Col } from 'reactstrap';
-import { NavLink, Route, Redirect } from 'react-router-dom';
+import { NavLink, Route, Redirect, Switch } from 'react-router-dom';
 import SectionTitle from '../../components/SectionTitle';
 import PersonalInformation from '../../containers/PersonalInformation';
 import Security from '../../containers/Security';
 import Currencies from '../../containers/Currencies';
-import Notifications from '../../containers/Notifications';
 import Agreements from '../../containers/Agreements';
 import TaxReport from '../../containers/TaxReport';
 import ManagePayment from '../../containers/ManagePayment';
 import styles from './styles.scss';
+import NotificationSettings from '../../containers/NotificationSettings';
 
 const AccountSettings = () => {
   return (
@@ -82,27 +82,29 @@ const AccountSettings = () => {
               </ul>
             </nav>
           </Col>
-          <Col styleName="tab-page-container">
-            <Route
-              path="/my-settings/personal-information"
-              component={PersonalInformation}
-            />
-            <Route path="/my-settings/security" component={Security} />
-            <Route path="/my-settings/currencies" component={Currencies} />
-            <Route
-              path="/my-settings/notifications"
-              component={Notifications}
-            />
-            <Route path="/my-settings/agreements" component={Agreements} />
-            <Route path="/my-settings/tax-report" component={TaxReport} />
-            <Route
-              path="/my-settings/manage-payment"
-              component={ManagePayment}
-            />
-            <Redirect
-              from="/my-settings"
-              to="/my-settings/personal-information"
-            />
+          <Col>
+            <Switch>
+              <Route
+                path="/my-settings/personal-information"
+                component={PersonalInformation}
+              />
+              <Route path="/my-settings/security" component={Security} />
+              <Route path="/my-settings/currencies" component={Currencies} />
+              <Route
+                path="/my-settings/notifications"
+                component={NotificationSettings}
+              />
+              <Route path="/my-settings/agreements" component={Agreements} />
+              <Route path="/my-settings/tax-report" component={TaxReport} />
+              <Route
+                path="/my-settings/manage-payment"
+                component={ManagePayment}
+              />
+              <Redirect
+                from="/my-settings"
+                to="/my-settings/personal-information"
+              />
+            </Switch>
           </Col>
         </Row>
       </div>
