@@ -1,0 +1,12 @@
+tr > td {
+  padding: 6px 0;
+}
+
+tr > td:first-of-type {
+  color: #555;
+  font-size: 12px;
+}
+
+td.news-link a {
+  text-decoration: none;
+}

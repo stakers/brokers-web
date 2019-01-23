@@ -1,0 +1,37 @@
+.content {
+  padding: 0 64px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.filter-wrapper {
+  margin-top: 32px;
+}
+
+.filter-sliders-wrapper {
+  padding-right: 30px;
+}
+
+.filter-sliders-title {
+  font-size: 13px;
+  margin-bottom: 100px;
+  display: block;
+}
+
+.risk {
+  display: flex;
+  justify-content: space-between;
+  span {
+    padding-top: 5px;
+    font-size: 10px;
+  }
+}
+
+.loan-listings {
+  margin-top: 32px;
+}
+
+.result-status {
+  padding: 35px 0 10px;
+  font-size: 12px;
+}

@@ -1,0 +1,53 @@
+$link-blue: #3f85f4;
+$light-gray: rgba(0, 0, 0, 0.57);
+$background-blue: #78c8c7;
+$background-link-hover: #6cb4b3;
+$highlight: rgb(56, 113, 194);
+$white: #fff;
+$notification-red: #ffcbb4;
+$text-dark: rgba(51, 51, 51, 0.7);
+$pitch-black: rgba(0, 0, 0, 0.87);
+
+.card-body {
+  height: 100%;
+  justify-content: space-between;
+
+  .card-header {
+    padding: 0 0 8px;
+    margin: 0 0 20px;
+    border-bottom: 2px solid $link-blue;
+
+    .title {
+      font-size: 22px;
+    }
+
+    .value {
+      font-size: 36px;
+    }
+  }
+
+  .data {
+    width: 100%;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    tbody > tr > td {
+      padding: 6px 0;
+      color: #555;
+      font-size: 14px;
+
+      &:last-of-type {
+        float: right;
+      }
+    }
+    .em {
+      border-top: 1px solid #e1e1e1;
+
+      > td {
+        font-weight: 600;
+        color: $pitch-black;
+      }
+    }
+  }
+}

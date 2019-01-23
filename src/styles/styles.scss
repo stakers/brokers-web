@@ -1,31 +1,56 @@
 /* Variables */
-$vin-blue: #5bb7db;
-$vin-green: #60b044;
-$vin-red: #ff0000;
 
 /* Styles */
+* {
+  box-sizing: border-box;
+}
 body {
   font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.4em;
-  color: #4d4d4d;
-  min-width: 230px;
-  max-width: 550px;
-  margin: 0 auto;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   font-smoothing: antialiased;
   font-weight: 300;
 }
-
-td {
-	padding: 12px;
+a {
+  text-decoration: none !important;
 }
-
-h2 {
-	color: $vin-blue;
+@font-face {
+  font-family: 'Ubuntu-Regular', sans-serif;
+  src: local('Ubuntu'),
+    url('/assets/fonts/Ubuntu-Regular.ttf') format('truetype');
 }
-
-.savings { color: $vin-green; }
-.loss { color: $vin-red; }
-input.small { width: 46px; }
-td.fuel-savings-label { width: 175px; }
+@font-face {
+  font-family: 'Ubuntu-Bold', sans-serif;
+  src: local('Ubuntu'), url('/assets/fonts/Ubuntu-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu-BoldItalic', sans-serif;
+  src: local('Ubuntu'),
+    url('/assets/fonts/Ubuntu-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu-Italic', sans-serif;
+  src: local('Ubuntu'),
+    url('/assets/fonts/Ubuntu-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu-Light', sans-serif;
+  src: local('Ubuntu'), url('/assets/fonts/Ubuntu-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu-LightItalic', sans-serif;
+  src: local('Ubuntu'),
+    url('/assets/fonts/Ubuntu-LightItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu-Medium', sans-serif;
+  src: local('Ubuntu'),
+    url('/assets/fonts/Ubuntu-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu-MediumItalic', sans-serif;
+  src: local('Ubuntu'),
+    url('/assets/fonts/Ubuntu-MediumItalic.ttf') format('truetype');
+}

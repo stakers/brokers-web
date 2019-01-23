@@ -1,0 +1,27 @@
+/* Stylings for react-table */
+.ReactTable {
+  border: none;
+}
+
+.ReactTable .rt-table .rt-thead {
+  box-shadow: none;
+  font-size: 12px;
+}
+
+.ReactTable .rt-thead .rt-th.-cursor-pointer {
+  border-right: none;
+  border-bottom: 2px solid rgb(225, 225, 225);
+}
+
+.ReactTable .rt-thead.-headerGroups {
+  border-bottom: none;
+  background: #fff;
+}
+
+.ReactTable .rt-thead .rt-th {
+  align-self: flex-end;
+}
+
+.ReactTable .rt-tbody .rt-td {
+  border-right: none;
+}

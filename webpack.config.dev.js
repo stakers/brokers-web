@@ -1,7 +1,7 @@
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
-import HardSourceWebpackPlugin from 'hard-source-webpack-plugin'; 
+import HardSourceWebpackPlugin from 'hard-source-webpack-plugin';
 
 export default {
   resolve: {
@@ -26,7 +26,8 @@ export default {
     new HardSourceWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
-    new HtmlWebpackPlugin({     // Create HTML file that includes references to bundled CSS and JS.
+    new HtmlWebpackPlugin({
+      // Create HTML file that includes references to bundled CSS and JS.
       template: 'src/index.ejs',
       minify: {
         removeComments: true,
@@ -38,7 +39,7 @@ export default {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader']
       },
@@ -94,27 +95,68 @@ export default {
         ]
       },
       {
-        test: /(\.css|\.scss|\.sass)$/,
+        test: /\.(jpe?g|png|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader'
+          }
+        ]
+      },
+      {
+        test: /(\.scss|\.sass)$/,
         use: [
           'style-loader',
           {
             loader: 'css-loader',
             options: {
-              sourceMap: true
+              modules: true,
+              sourceMap: true,
+              localIdentName: '[brk]__[local]___[hash:base64:5]'
             }
-          }, {
+          },
+          {
             loader: 'postcss-loader',
             options: {
-              plugins: () => [
-                require('autoprefixer')
-              ],
+              plugins: () => [require('autoprefixer')],
               sourceMap: true
             }
-          }, {
+          },
+          {
             loader: 'sass-loader',
             options: {
               includePaths: [path.resolve(__dirname, 'src', 'scss')],
               sourceMap: true
+            }
+          }
+        ]
+      },
+      {
+        test: /\.css$/,
+        exclude: /bootstrap.*\.css$/,
+        use: [
+          'style-loader',
+          { loader: 'css-loader', options: { minimize: true } },
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: './postcss.config.js'
+              }
+            }
+          }
+        ]
+      },
+      {
+        test: /bootstrap.*\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: './postcss.config.js'
+              }
             }
           }
         ]

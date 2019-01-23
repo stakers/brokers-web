@@ -1,0 +1,65 @@
+$link-blue: #3f85f4;
+$light-gray: rgba(0, 0, 0, 0.57);
+$background-blue: #78c8c7;
+$background-link-hover: #6cb4b3;
+$highlight: rgb(56, 113, 194);
+$white: #fff;
+$notification-red: #ffcbb4;
+$text-dark: rgba(51, 51, 51, 0.7);
+$pitch-black: rgba(0, 0, 0, 0.87);
+
+.header-wrapper {
+  background: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 64px;
+  margin: 0;
+
+  .header-logo {
+    text-decoration: none;
+    background-image: url('/assets/images/web_logo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    display: block;
+    height: 50px;
+    max-width: 145px;
+    width: 145px;
+  }
+
+  div {
+    display: flex;
+    .head-link-wrapper {
+      margin-right: 24px;
+      color: $link-blue;
+      font-size: 14px;
+    }
+    .nav-helper {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-right: 16px;
+
+        .header-balance-link {
+          color: $light-gray;
+        }
+
+        .investor-username {
+          color: $link-blue;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
