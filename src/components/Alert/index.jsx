@@ -34,7 +34,7 @@ function Alert(props) {
             <li>Date of birth and document ID are clearly visible.</li>
           </ul>
         </div>
-        <Button type="btn-primary" size="btn-sm">
+        <Button color="primary" size="sm">
           Please try again
         </Button>
       </UncontrolledAlert>

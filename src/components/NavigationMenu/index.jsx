@@ -17,7 +17,7 @@ function NavigationMenu() {
         </li>
         <li>
           <NavLink
-            to="/loan-listings"
+            to="/dashboard/loan-listings"
             activeStyle={{ background: 'rgb(69, 43, 109)', opacity: '1' }}
           >
             Loan Listings

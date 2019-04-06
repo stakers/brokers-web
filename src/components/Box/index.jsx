@@ -34,7 +34,7 @@ function Box(props) {
         </table>
       </div>
       {props.btnText ? (
-        <Button type="btn-primary" size="btn-lg">
+        <Button color="primary" size="lg">
           {props.btnText}
         </Button>
       ) : null}

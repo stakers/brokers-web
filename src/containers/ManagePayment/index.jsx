@@ -5,7 +5,11 @@ import CssModules from 'react-css-modules';
 import { Card, CardBody } from 'reactstrap';
 import SectionTitle from '../../components/SectionTitle';
 import PageRows from './PageRows';
+import Cards from './Cards';
+import Accounts from './Accounts';
 import styles from './styles.scss';
+import CardModal from './CardModal';
+import AccountModal from './AccountModal';
 
 class ManagePayment extends React.Component {
   constructor(props) {
@@ -13,7 +17,9 @@ class ManagePayment extends React.Component {
 
     this.state = {
       showCards: false,
-      showAccounts: false
+      showAccounts: false,
+      cardModal: false,
+      accountModal: false
     };
   }
 
@@ -31,11 +37,40 @@ class ManagePayment extends React.Component {
     });
   };
 
+  toggleAddCardModal = () => {
+    // this.setState({
+    //   cardModal: !this.state.cardModal
+    // });
+  };
+
+  toggleAddAccountModal = () => {
+    // this.setState({
+    //   accountModal: !this.state.accountModal
+    // });
+  };
+
   render() {
-    const { showAccounts, showCards } = this.state;
+    const { showAccounts, showCards, cardModal, accountModal } = this.state;
     return (
       <div styleName="payment-information-page">
-        <SectionTitle size="2">Manage Payment</SectionTitle>
+        <CardModal
+          toggleCardModal={this.toggleAddCardModal}
+          cardModal={cardModal}
+        />
+        <AccountModal
+          toggleAccountModal={this.toggleAddAccountModal}
+          accountModal={accountModal}
+        />
+
+        {!showCards && !showAccounts && (
+          <SectionTitle size="2">Manage Payment</SectionTitle>
+        )}
+        {showCards && (
+          <SectionTitle size="2">Manage Payment &gt; Cards</SectionTitle>
+        )}
+        {showAccounts && (
+          <SectionTitle size="2">Manage Payment &gt; Accounts</SectionTitle>
+        )}
         <Card>
           <CardBody>
             {!showCards && !showAccounts && (
@@ -44,8 +79,18 @@ class ManagePayment extends React.Component {
                 toggleShowCards={this.toggleShowCards}
               />
             )}
-            {showCards && <span>All cards</span>}
-            {showAccounts && <span>All accounts</span>}
+            {showCards && (
+              <Cards
+                toggleShowCards={this.toggleShowCards}
+                toggleAddCardModal={this.toggleAddCardModal}
+              />
+            )}
+            {showAccounts && (
+              <Accounts
+                toggleShowAccounts={this.toggleShowAccounts}
+                toggleAddAccountModal={this.toggleAddAccountModal}
+              />
+            )}
           </CardBody>
         </Card>
       </div>

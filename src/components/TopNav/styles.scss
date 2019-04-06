@@ -63,3 +63,28 @@ $pitch-black: rgba(0, 0, 0, 0.87);
     }
   }
 }
+
+.rap-popover-content {
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(83, 104, 117, 0.1), 0 2px 4px rgba(16, 22, 26, 0.2),
+    0 8px 24px rgba(16, 22, 26, 0.2);
+  display: block !important;
+  width: 200px;
+  padding: 10px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      margin-right: 0 !important;
+      padding: 4px 8px;
+      a {
+        display: block;
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  }
+}

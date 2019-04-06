@@ -8,18 +8,9 @@ import { Provider } from 'react-redux';
 import { hot } from 'react-hot-loader';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
-// Components and Containers
-import Navigation from './containers/Navigation';
-
-// Pages
-import OverviewPage from './pages/OverviewPage';
-import LoanListings from './pages/LoanListings';
-import AutoInvest from './pages/AutoInvest';
-import AccountStatement from './pages/AccountStatement';
-import MyInvestment from './pages/MyInvestment';
-import DepositWithdrawFx from './pages/DepositWithdrawFx';
-import AccountSettings from './pages/AccountSettings';
-
+import Dashboard from './pages/Dashboard';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 // This is a class-based component because the current
 // version of hot reloading won't hot reload a stateless
 // component at the top-level.
@@ -31,17 +22,10 @@ class App extends Component {
       <Provider store={store}>
         <ConnectedRouter history={history}>
           <Fragment>
-            <Navigation />
-            <Switch>
-              <Route path="/overview" component={OverviewPage} />
-              <Route path="/loan-listings" component={LoanListings} />
-              <Route path="/auto-invest" component={AutoInvest} />
-              <Route path="/account-statement" component={AccountStatement} />
-              <Route path="/my-investment" component={MyInvestment} />
-              <Route path="/transactions" component={DepositWithdrawFx} />
-              <Route path="/my-settings" component={AccountSettings} />
-              <Redirect to="/overview" from="/" />
-            </Switch>
+            <Route path="/dashboard" component={Dashboard} />
+            <Route path="/login" component={Login} />
+            <Route path="/signup" component={Signup} />
+            <Redirect to="/dashboard" from="/" />
           </Fragment>
         </ConnectedRouter>
       </Provider>

@@ -1,3 +1,5 @@
+// This file configures a web server that will serve up the source files in the src/ folder
+
 // This file configures the development web server
 // which supports hot reloading and synchronized testing.
 

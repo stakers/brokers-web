@@ -35,3 +35,135 @@
   padding: 35px 0 10px;
   font-size: 12px;
 }
+
+.modal-content-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-content-header .modal-content-title {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.modal-content-header .close-modal {
+  cursor: pointer;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.modal-body-col-right {
+  flex: 2;
+  margin-right: 24px;
+}
+.modal-body-col-left {
+  flex: 1;
+}
+.modal-body-col-right .score-cards-wrapper {
+  display: flex;
+  height: 100%;
+  max-height: 150px;
+}
+.modal-body-col-right .score-cards-wrapper .score-card {
+  border-radius: 15px;
+  height: 100%;
+  width: 260px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 24px;
+  flex: 1;
+  flex-shrink: 0;
+}
+
+.modal-body-col-right .score-cards-wrapper .score-card:last-of-type {
+  margin-right: 0;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.modal-body-col-right .score-cards-wrapper .score-card:last-of-type button {
+  align-self: flex-start;
+  background: #f9c80e;
+  border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  width: 215px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.modal-body-col-right .credit-score {
+  background-color: #4056f4;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.modal-body-col-right .personality-score {
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.modal-body-col-right .credit-score span:first-of-type {
+  margin-bottom: 6px;
+}
+
+.section {
+  margin-top: 16px;
+}
+
+.section-header {
+  background: #481dc7;
+  padding: 16px 28px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.info-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 21px 28px;
+  height: 100%;
+}
+
+.info-card-header {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.info-card .table-no-header {
+  width: 100%;
+}
+
+.info-card .table-no-header tr td {
+  font-size: 14px;
+}
+
+.info-card .table-no-header tr td:last-of-type {
+  float: right;
+}
+
+.info-card .table-with-header {
+  width: 100%;
+}
+
+.info-card .table-with-header thead tr,
+.info-card .table-with-header tbody tr td {
+  font-size: 14px;
+}

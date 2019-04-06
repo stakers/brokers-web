@@ -1,7 +1,9 @@
 import React from 'react';
 import CssModules from 'react-css-modules';
-import { FaBriefcase, FaPowerOff } from 'react-icons/fa';
+import { FaBriefcase, FaPowerOff, FaCaretDown } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
+import Popover from 'react-awesome-popover';
+import 'react-awesome-popover/dest/react-awesome-popover.css';
 import styles from './styles.scss';
 
 function TopNav() {
@@ -19,19 +21,34 @@ function TopNav() {
             </a>
           </li>
           <li>
-            <a href="#" styleName="investor-username">
-              John Doe
-            </a>
+            <Popover
+              action="click"
+              placement="bottom"
+              contentClass="popover-content"
+            >
+              <a href="#" styleName="pt-button investor-username" role="button">
+                John Doe
+                <FaCaretDown color="#78c8c7" />
+              </a>
+              <div styleName="rap-popover-content">
+                <ul>
+                  <li>
+                    <NavLink to="/my-settings">My Account</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/campaigns">Campaigns</NavLink>
+                  </li>
+                </ul>
+              </div>
+            </Popover>
           </li>
           <li>
-            <NavLink to="/my-settings">
-              <FaBriefcase />
-            </NavLink>
+            <FaBriefcase />
           </li>
           <li>
-            <a href="#">
+            <NavLink to="/login">
               <FaPowerOff />
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>

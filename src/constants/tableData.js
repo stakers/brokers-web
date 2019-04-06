@@ -28,6 +28,66 @@ export const data = [
     interest_rate: '16.0%',
     term: '10 d. (0)',
     available_for_investment: '₽ 396 303.95'
+  },
+  {
+    id: '7589427-02',
+    issue_date: '22.11.2018',
+    loan_type: 'Business Loan',
+    loan_originator:
+      'https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/E11384D8-3EA8-FB17-7D6D-5094655641C5.png',
+    loan_amount: '₽ 480 000 / ₽ 480 000',
+    borrower_apr: '-',
+    interest_rate: '16.0%',
+    term: '10 d. (0)',
+    available_for_investment: '₽ 396 303.95'
+  },
+  {
+    id: '7589427-02',
+    issue_date: '22.11.2018',
+    loan_type: 'Business Loan',
+    loan_originator:
+      'https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/E11384D8-3EA8-FB17-7D6D-5094655641C5.png',
+    loan_amount: '₽ 480 000 / ₽ 480 000',
+    borrower_apr: '-',
+    interest_rate: '16.0%',
+    term: '10 d. (0)',
+    available_for_investment: '₽ 396 303.95'
+  },
+  {
+    id: '7589427-02',
+    issue_date: '22.11.2018',
+    loan_type: 'Business Loan',
+    loan_originator:
+      'https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/E11384D8-3EA8-FB17-7D6D-5094655641C5.png',
+    loan_amount: '₽ 480 000 / ₽ 480 000',
+    borrower_apr: '-',
+    interest_rate: '16.0%',
+    term: '10 d. (0)',
+    available_for_investment: '₽ 396 303.95'
+  },
+  {
+    id: '7589427-02',
+    issue_date: '22.11.2018',
+    loan_type: 'Business Loan',
+    loan_originator:
+      'https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/E11384D8-3EA8-FB17-7D6D-5094655641C5.png',
+    loan_amount: '₽ 480 000 / ₽ 480 000',
+    borrower_apr: '-',
+    interest_rate: '16.0%',
+    term: '10 d. (0)',
+    available_for_investment: '₽ 396 303.95'
+  },
+  {
+    id: '7589427-02',
+    issue_date: '22.11.2018',
+    loan_type: 'Business Loan',
+    loan_originator:
+      'https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/E11384D8-3EA8-FB17-7D6D-5094655641C5.png',
+    loan_amount: '₽ 480 000 / ₽ 480 000',
+    borrower_apr: '-',
+    interest_rate: '16.0%',
+    term: '10 d. (0)',
+    available_for_investment: '₽ 396 303.95'
   }
 ];
 
